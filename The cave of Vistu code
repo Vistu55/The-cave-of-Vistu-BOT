@@ -1,0 +1,37 @@
+import os
+from discord_easy_commands import EasyBot
+bot = EasyBot()
+bot.setCommand("!invitacion", "https://discord.gg/4v8kdAKBvR")
+bot.setCommand("!normativa", """
+No pelear con nadie
+No burlarse de los demás
+No faltar el respeto a NADIE
+No discriminar a nadie por ninguna condicion
+No joder con ningun tema serio
+Se admitirán todo tipo de chistes de humor negro              
+               """)
+bot.setCommand("!comandos", """
+!invitacion para generar una invitacion
+!normativa para leer las reglas basicas de este servidor 
+!canales para ver cuantos canales de voz y de texto hay en el servidor
+!roles para ver cuantos roles hay en el servidor        
+              
+               """)
+bot.setCommand("!canales", """
+Canales de texto: 17
+Canales de voz: 11
+               """)
+bot.setCommand("!roles", "Hay 33 roles en el servidor")
+bot.setCommand("JAJA","JAJAJA")
+bot.setCommand("Hola", "¿todo bien?")
+bot.setCommand("alg? @everyone","@everyone")
+bot.setCommand("XDDD","XD")
+bot.setCommand("Q","Que")
+bot.setCommand("q","que")
+bot.setCommand("?",":question:")
+bot.setCommand("Ok",":thumbsup:")
+bot.setCommand("no",":thumbsdown:")
+bot.setCommand("uwu","uwu.")
+bot.setCommand("Chau","Adiós.")
+
+bot.run(os.environ['TOKEN'])
